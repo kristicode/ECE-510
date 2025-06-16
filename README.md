@@ -183,5 +183,5 @@ This data can then be analyzed using external tools (e.g., Python scripts) for s
  - [Reservoir computing using dynamic memristors for temporal information processing ](https://pubmed.ncbi.nlm.nih.gov/29259188/)
  - [Reservoir Computing with Superconducting Electronics](https://www.semanticscholar.org/paper/Reservoir-Computing-with-Superconducting-Rowlands-Nguyen/12f4b59508ab603ebcab73ab836b29acb53d47a5)
  - [Numerical Study on Physical Reservoir Computing With Josephson Junctions](https://ieeexplore.ieee.org/document/10382544)
- - 
+   
 
