@@ -96,5 +96,21 @@ The readout process is organized as a network comprising
 5 input neurons and 10 output neurons. The reservoir state,
 which is represented by the read currents from the 5 JJs, serves
 as the input to this network. 
+In the classification procedure, the output for each
+of the 10 neurons is calculated by taking the dot
+product between the 5 input values and the respective weight
+vector for each neuron. The predicted digit is identified
+by selecting the neuron that produces the highest dot productscore, and the associated label of that
+neuron is chosen as the predicted digit. The readout function is trained using a supervised approach
+with logistic regression applied to iteratively adjust the weights and
+minimize classification error. The 10 digits, represented as 5 × 4 pixel grids, each have unique pixel patterns along the row direction,
+which are mapped to 10 separate pulse streams for the JJs.
+Reservoir states, which are determined by the combined resistance values of the 5 JJs
+after processing these 10 images. The reservoir states for each digit are noticeably different, highlighting the system’s ability
+to distinctly recognize the 10 digits. These reservoir states were then provided as input to the readout network during
+both training and classification.
+
+## Modeling of RC system using JJs for cart pole task.
+
 
 
