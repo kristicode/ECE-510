@@ -127,3 +127,11 @@ Recent literature demonstrates the effectiveness of spiking neural networks in s
 | **Novelty**                | Physical superconducting implementation | Virtual SNN reservoirs   | Biologically inspired learning | Surrogate gradient training |
 | **Effort/Iterations**      | Minimal training steps                  | Moderate complexity      | Many training episodes         | Intensive policy learning   |
 
+## Performance of my model
+i) # Digit recognition task: After 794 training iterations,
+the system was able to correctly classify all 10 images.
+To test the influence of cycle-to-cycle device variations, we
+conducted 10 trials for each image without retraining the
+readout function. The system demonstrated 100% accuracy
+for this basic task. 
+ii) # Cart pole task : The trained model demonstrated strong overall performance, achieving 94% accuracy on the test dataset. It exhibited excellent detection of the balanced state (class 1), with a precision of 0.94, recall of 1.00, and F1-score of 0.97. However, it failed to identify the fallen state (class 0), with precision, recall, and F1-score all at 0.00, likely due to class imbalance in the data (only 5 instances of class 0 versus 75 for class 1). The macro-averaged F1-score of 0.48 reflects this disparity, whereas the weighted F1-score of 0.91 is boosted by the dominance of class 1. These results indicate that while the JJ-RC system effectively captures and classifies temporal dynamics in the CartPole task, future improvements should focus on addressing class imbalance through better sampling or algorithmic adjustments such as class weighting.
